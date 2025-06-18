@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/elegibility-microservice/elegibility-microservice.iml" filepath="$PROJECT_DIR$/elegibility-microservice/elegibility-microservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/games-service-api/games-service-api.iml" filepath="$PROJECT_DIR$/games-service-api/games-service-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/proyecto 4.iml" filepath="$PROJECT_DIR$/.idea/proyecto 4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-service-api/user-service-api.iml" filepath="$PROJECT_DIR$/user-service-api/user-service-api.iml" />
     </modules>
   </component>
 </project>

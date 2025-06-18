@@ -7,25 +7,38 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="elegibility-microservice" />
-        <module name="user-service-api" />
-        <module name="games-service-api" />
+        <module name="eligibility-microservice" />
+        <module name="game-service" />
         <module name="gateway-service" />
+      </profile>
+      <profile name="Annotation profile for users-service-api" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="users-service-api" />
+        <module name="auth-service-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="elegibility-microservice" target="17" />
       <module name="games-service-api" target="17" />
-      <module name="gateway-service" target="17" />
       <module name="user-service-api" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-service-api" options="-parameters -parameters" />
       <module name="elegibility-microservice" options="-parameters" />
+      <module name="eligibility-microservice" options="-parameters" />
+      <module name="game-service" options="-parameters" />
       <module name="games-service-api" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
       <module name="user-service-api" options="-parameters" />
+      <module name="users-service-api" options="-parameters -parameters" />
     </option>
   </component>
 </project>
